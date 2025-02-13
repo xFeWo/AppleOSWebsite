@@ -5,10 +5,10 @@ body {
 
 .icon-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     ;
 }
 
@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 50px
+    padding-top: 80px
 }
 
 .icon p {
