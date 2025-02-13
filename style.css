@@ -10,6 +10,17 @@ body {
     text-align: center;
 }
 
+.icon a {
+    transition: ease 0.3s;
+}
+.icon a:hover {
+    transform: scale(1.03);
+}
+
 .icon p {
     color: white;
+}
+
+.navbar-container {
+    background-color: burlywood;
 }
