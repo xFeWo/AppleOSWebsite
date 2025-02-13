@@ -28,6 +28,9 @@ body {
 
 .icon p {
     color: white;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    margin-top: 5px;
 }
 
 .navbar-container {
