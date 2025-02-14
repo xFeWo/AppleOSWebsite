@@ -1,6 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
     background-image: url(images/backgrounds/Background_2.png);
+    user-select: none;  
 }
 
 
@@ -47,10 +48,25 @@ body {
     font-size: 19px;
 }
 
+
+
+.open-search-bar {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
 .open-control-center {
     position: absolute;
     top: 30px;
-    right: 20px;
+    right: 10px;
     
     color: white;
     font-size: 25px;
@@ -58,22 +74,46 @@ body {
     cursor: pointer;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
 
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s ease-in-out;
+}
+.overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
 
 .control-center {
     position: absolute;
     top: -800px;
     right: 40px;
+    z-index: 10;
 
     width: 550px;
     height: 800px;
 
     background-color: blueviolet;
-    transition: ease-in-out 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .toggle-control-center {
     top: 40px;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -116,6 +156,7 @@ body {
     position: absolute;
     bottom: 25px;
     left: 50%;
+    z-index: -10;
     transform: translateX(-50%);
 
     background: rgba(233, 233, 233, 0.2);

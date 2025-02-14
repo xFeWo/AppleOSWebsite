@@ -9,9 +9,11 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div id="overlay" class="overlay" onclick="closeControlCenter()"></div>
+
     <!-- <div class="controll-center">
 
-    </div> -->
+    </div> 
 
     <div>
         <p class="datetime" id="datetime">20:02 Freitag 14. Feb.</p>
@@ -20,7 +22,8 @@
         <p class="connectivity" id="controll-center">100 %</p>
         <i class="fa-solid fa-battery-full"></i>
 
-        <div onclick="toggleControlCenter()" class="toggle-control-center">&#9776;</div>
+        <div onclick="openControlCenter()" class="open-control-center">&#9776;</div>
+        <div onclick="openSearchBar()" class="open-search-bar"><i class="fa-solid fa-search"></i></div>
     </div>
 
     <div class="icon-container">
