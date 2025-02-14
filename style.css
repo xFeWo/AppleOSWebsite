@@ -47,7 +47,7 @@ body {
     font-size: 19px;
 }
 
-.toggle-controll-center {
+.open-control-center {
     position: absolute;
     top: 30px;
     right: 20px;
@@ -62,15 +62,19 @@ body {
 
 .control-center {
     position: absolute;
-    top: 40px;
+    top: -800px;
     right: 40px;
 
-    max-width: 550px;
-    max-height: 800px;
+    width: 550px;
+    height: 800px;
 
     background-color: blueviolet;
+    transition: ease-in-out 0.3s;
 }
 
+.toggle-control-center {
+    top: 40px;
+}
 
 
 
