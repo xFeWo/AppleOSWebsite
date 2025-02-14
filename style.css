@@ -101,7 +101,7 @@ body {
     right: 40px;
     z-index: 10;
 
-    width: 550px;
+    width: 580px;
     height: 800px;
 
     background-color: blueviolet;
@@ -114,6 +114,144 @@ body {
 
 .hidden {
     display: none;
+}
+
+.control-center-top-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.control-center-mid-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.connectivity-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 25px;
+
+    margin-top: 30px;
+    margin-left: 30px;
+
+    width: 40%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+}
+
+.media-player-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 25px;
+
+    margin-top: 30px;
+    margin-right: 30px;
+
+    width: 40%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+}
+
+.control-center-focus-stuff {
+    width: 40%;
+}
+
+.location-sound-container {
+    margin-left: 75px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+}
+
+.control-center-location-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.control-center-sound-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.focus-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    padding-left: 20px;
+    padding-right: 45px;
+    
+    border-radius: 25px;
+
+    margin-top: 30px;
+    margin-left: 31px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.fa-moon {
+    background: rgba(0, 0, 0, 1);
+    color: blueviolet;
+    font-size: 52px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+
+    margin-left: -10px;
+}
+
+.control-center-bars {
+    margin-left: 78px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-center-brightness-bar {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 170px;
+
+    border-radius: 25px;
+}
+
+.control-center-volume-bar {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 170px;
+
+    border-radius: 25px;
 }
 
 
