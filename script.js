@@ -1,7 +1,25 @@
 function openControlCenter() {
     var controlCenter = document.getElementById("control-center");
+    var overlay = document.getElementById("overlay");
+    var menuIcon = document.querySelector(".open-control-center");
+
     controlCenter.classList.toggle("toggle-control-center");
+    overlay.classList.add("show");
+
+    menuIcon.classList.add("hidden");
 }
+
+function closeControlCenter() {
+    var controlCenter = document.getElementById("control-center");
+    var overlay = document.getElementById("overlay");
+    var menuIcon = document.querySelector(".open-control-center");
+
+    controlCenter.classList.remove("toggle-control-center");
+    overlay.classList.remove("show");
+
+    menuIcon.classList.remove("hidden");
+}
+
 
 function updateDateTime() {
     const now = new Date();
