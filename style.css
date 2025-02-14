@@ -11,9 +11,9 @@ body {
     top: -8px;
 
     color: white;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.8px;
-    font-size: 14px;
     cursor: default;
 }
 
@@ -23,9 +23,9 @@ body {
     top: -8px;
 
     color: white;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.8px;
-    font-size: 14px;
     cursor: default;
 }
 
@@ -34,8 +34,8 @@ body {
     top: 7px;
     right: 92px;
 
-    font-size: 13px;
     color: white;
+    font-size: 13px;
 }
 
 .fa-battery-full {
@@ -43,9 +43,34 @@ body {
     top: 5px;
     right: 10px;
 
-    font-size: 19px;
     color: white;
+    font-size: 19px;
 }
+
+.toggle-controll-center {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.control-center {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    max-width: 550px;
+    max-height: 800px;
+
+    background-color: blueviolet;
+}
+
 
 
 
