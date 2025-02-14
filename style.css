@@ -116,6 +116,86 @@ body {
     display: none;
 }
 
+.connectivity-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 25px;
+
+    margin-top: 30px;
+    margin-left: 30px;
+
+    width: 40%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+}
+
+.location-sound-container {
+    margin-top: 15px;
+    margin-left: 45px;
+
+    width: 40%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+}
+
+.control-center-location-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.control-center-sound-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.focus-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    padding-left: 10px;
+    padding-right: 45px;
+    
+    border-radius: 25px;
+
+    margin-top: 15px;
+    margin-left: 30px;
+
+    width: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.fa-moon {
+    background: rgba(0, 0, 0, 1);
+    color: blueviolet;
+    font-size: 52px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+
+    margin-left: -10px;
+}
+
 
 
 .icon-container {
