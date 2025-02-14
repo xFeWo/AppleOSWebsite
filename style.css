@@ -48,18 +48,31 @@ body {
     font-size: 19px;
 }
 
+
+
+.open-search-bar {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
 .open-control-center {
     position: absolute;
     top: 30px;
-    right: 20px;
+    right: 10px;
     
     color: white;
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
 }
-
-
 
 .overlay {
     position: fixed;
