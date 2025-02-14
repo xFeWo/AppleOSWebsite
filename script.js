@@ -1,3 +1,8 @@
+function openControlCenter() {
+    var controlCenter = document.getElementById("control-center");
+    controlCenter.classList.toggle("toggle-control-center");
+}
+
 function updateDateTime() {
     const now = new Date();
 
