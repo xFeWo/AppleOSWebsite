@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wetter</title>
+    <link rel="stylesheet" href="weather.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <a href="/index.html">Zurück zur Startseite</a>
+    <main>
+        <form action="">
+            <input type="text" autocomplete="off" id="valueSearch">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <section class="result">
+            <figure class="name">
+                <figcaption>London</figcaption>
+                <img src="https://flagsapi.com/GB/shiny/32.png" alt="">
+            </figure>
+            <figure class="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                <figcaption>
+                    <span>32</span>
+                    <sup>o</sup>
+                </figcaption>                
+            </figure>
+            <p class="description">
+                Leicht Bedeckt
+            </p>
+
+            <ul>
+                <li>
+                    <span>Wolken</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span>98</span>%
+                </li>
+                <li>
+                    <span>Luftfeuchtigkeit</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>55</span>%
+                </li>
+                <li>
+                    <span>Luftdruck</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span>1001</span>hPa
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="weather.js"></script>
 </body>
 </html>

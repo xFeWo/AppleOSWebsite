@@ -10,7 +10,7 @@ body {
     }
 
 #calculator {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
     background-color: hsl(0, 0%, 10%);
     border-radius: 15px;
     max-width: 500px;
