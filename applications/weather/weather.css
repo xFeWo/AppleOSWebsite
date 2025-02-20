@@ -21,6 +21,10 @@ main{
     box-shadow: 0 30px 50px #5553;
     padding: 30px;
     box-sizing: border-box;
+    transition: ease .5s
+}
+main:hover {
+    transform: scale(1.05);
 }
 main form{
     border: 1px solid #5552;
@@ -93,6 +97,14 @@ main li:nth-child(3){
 }
 main.error{
     animation: errorEffect 0.3s linear 1;
+}
+
+.clouds , .humidity, .pressure {
+    transition: ease 0.3s;
+}
+.clouds:hover , .humidity:hover, .pressure:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
 }
 @keyframes errorEffect{
     0%{
