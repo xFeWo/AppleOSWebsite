@@ -180,7 +180,12 @@ body {
     gap: 15px;
     margin-left: 75px;
 }
-.control-center-bell-icon, .control-center-mirror-icon {
+.control-center-bell-icon {
+    background-color: rgb(255, 255, 255);
+    padding: 27px;
+    border-radius: 25px;
+}
+.control-center-mirror-icon {
     background-color: rgba(234, 234, 234, 0.5);
     padding: 22px;
     border-radius: 25px;
