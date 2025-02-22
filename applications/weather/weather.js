@@ -41,7 +41,7 @@ const searchWeather = () => {
 }
 // search Default
 const initApp = () => {
-    valueSearch.value = 'Münster';
+    valueSearch.value = 'Felix';
     searchWeather();
 }
 initApp();
