@@ -1,6 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
-    background-image: url(images/backgrounds/Background_2.png);
+    background-image: url(images/backgrounds/background_2.png);
     user-select: none;  
 }
 
@@ -105,6 +105,9 @@ body {
 
     transition: 0.3s ease-in-out;
 }
+.control-center img {
+    cursor: pointer;
+}
 
 .toggle-control-center {
     top: 40px;
@@ -145,9 +148,7 @@ body {
 
 .media-player-container {
     background-color: rgba(234, 234, 234, 0.5);
-
-    padding: 60px 15px 30px;
-
+    padding: 60px 22px 35px 22px;
     border-radius: 25px;
     margin: 30px 30px 0 0;
     width: 40%;
@@ -169,7 +170,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .bell-mirror-container {
@@ -218,12 +219,15 @@ body {
     gap: 25px;
     margin-left: 77px;
 }
-.control-center-brightness-bar, .control-center-volume-bar {
-    background-color: rgba(234, 234, 234, 0.5);
-    padding: 180px 25px 25px 25px;
+.control-center-brightness-bar {
+    padding: 180px 28px 25px 28px;
     border-radius: 25px;
-    -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(1) invert(1);
+    background: linear-gradient(to bottom, rgba(21, 21, 21, 0.5) 60%, white 40%);
+}
+.control-center-volume-bar {
+    padding: 180px 28px 25px 28px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, rgba(21, 21, 21, 0.5) 50%, white 50%);
 }
 
 
