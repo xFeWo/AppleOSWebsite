@@ -174,7 +174,7 @@ body {
     filter: grayscale(1) invert(1);
 }
 
-.bell-mirror-container {
+.bell-lock-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -186,9 +186,9 @@ body {
     padding: 27px;
     border-radius: 25px;
 }
-.control-center-mirror-icon {
+.control-center-lock-icon {
     background-color: rgba(21, 21, 21, 0.5);
-    padding: 22px;
+    padding: 27px;
     border-radius: 25px;
 }
 
