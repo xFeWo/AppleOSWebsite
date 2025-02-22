@@ -104,7 +104,6 @@ body {
     width: 580px;
     height: 800px;
 
-    background-color: blueviolet;
     transition: 0.3s ease-in-out;
 }
 
@@ -146,13 +145,27 @@ body {
 
 .media-player-container {
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 15px;
+
+    padding: 60px 15px 30px;
+
     border-radius: 25px;
     margin: 30px 30px 0 0;
     width: 40%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+.media-player-container p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.media-player-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
@@ -197,8 +210,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-left: 78px;
+    gap: 25px;
+    margin-left: 77px;
 }
 .control-center-brightness-bar, .control-center-volume-bar {
     background-color: rgba(0, 0, 0, 0.3);
