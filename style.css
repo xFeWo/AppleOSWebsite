@@ -220,12 +220,12 @@ body {
     margin-left: 77px;
 }
 .control-center-brightness-bar {
-    padding: 180px 28px 25px 28px;
+    padding: 195px 35px 25px 35px;
     border-radius: 25px;
     background: linear-gradient(to bottom, rgba(21, 21, 21, 0.5) 60%, white 40%);
 }
 .control-center-volume-bar {
-    padding: 180px 28px 25px 28px;
+    padding: 195px 35px 25px 35px;
     border-radius: 25px;
     background: linear-gradient(to bottom, rgba(21, 21, 21, 0.5) 50%, white 50%);
 }
