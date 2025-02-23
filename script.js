@@ -20,6 +20,14 @@ function closeControlCenter() {
     menuIcon.classList.remove("hidden");
 }
 
+function toggleImage() {
+    var img = document.getElementById("playPauseButton");
+    if (img.src.includes("play.png")) {
+        img.src = "images/control_center/mediaplayer/pause.png";
+    } else {
+        img.src = "images/control_center/mediaplayer/play.png";
+    }
+}
 
 function updateDateTime() {
     const now = new Date();
