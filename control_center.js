@@ -45,6 +45,18 @@ function toggleLockButton() {
     }
 }
 
+function toggleFocusButton() {
+    var img = document.getElementById("focus-button");
+    var text = document.getElementById("focus-text")
+    if (img.src.includes("focus_on.png")) {
+        img.src = "images/control_center/focus_off.png";
+        text.innerHTML = "Fokus";
+    } else {
+        img.src = "images/control_center/focus_on.png";
+        text.innerHTML = "Nicht stören";
+    }
+}
+
 function toggleFlightModeButton() {
     var img = document.getElementById("flight-mode-button");
     if (img.src.includes("flight_mode_on.png")) {
