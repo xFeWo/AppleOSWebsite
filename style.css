@@ -135,7 +135,6 @@ body {
 
 .connectivity-container {
     background-color: rgba(21, 21, 21, 0.5);
-
     padding: 15px;
     border-radius: 25px;
     margin: 30px 0 0 30px;
@@ -170,8 +169,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(1) invert(1);
 }
 
 .bell-lock-container {
@@ -181,12 +178,22 @@ body {
     gap: 15px;
     margin-left: 75px;
 }
-.control-center-bell-icon {
+.control-center-bell-icon-on {
     background-color: rgb(255, 255, 255);
     padding: 27px;
     border-radius: 25px;
 }
-.control-center-lock-icon {
+.control-center-bell-icon-off {
+    background-color: rgba(21, 21, 21, 0.5);
+    padding: 27px;
+    border-radius: 25px;
+}
+.control-center-lock-icon-on {
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 25px;
+}
+.control-center-lock-icon-off {
     background-color: rgba(21, 21, 21, 0.5);
     padding: 25px;
     border-radius: 25px;
