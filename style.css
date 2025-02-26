@@ -4,6 +4,11 @@ body {
     user-select: none;  
 }
 
+.hidden {
+    display: none;
+}
+
+
 
 
 .datetime {
@@ -18,11 +23,22 @@ body {
     cursor: default;
 }
 
+.notch {
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    color: black;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 30px 30px;
+}
+
 .connectivity {
     position: absolute;
     right: 38px;
     top: -8px;
-
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -34,7 +50,6 @@ body {
     position: absolute;
     top: 7px;
     right: 92px;
-
     color: white;
     font-size: 13px;
 }
@@ -43,7 +58,6 @@ body {
     position: absolute;
     top: 5px;
     right: 10px;
-
     color: white;
     font-size: 19px;
 }
@@ -54,7 +68,6 @@ body {
     position: absolute;
     top: 30px;
     left: 10px;
-    
     color: white;
     font-size: 22px;
     font-weight: bold;
@@ -67,7 +80,6 @@ body {
     position: absolute;
     top: 30px;
     right: 10px;
-    
     color: white;
     font-size: 25px;
     font-weight: bold;
@@ -78,15 +90,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100vw;
     height: 100vh;
-
     backdrop-filter: blur(8px);
-
     visibility: hidden;
     opacity: 0;
-
     transition: 0.3s ease-in-out;
 }
 .overlay.show {
@@ -96,13 +104,11 @@ body {
 
 .control-center {
     position: absolute;
-    top: -800px;
+    top: -6005px;
     right: 40px;
     z-index: 10;
-
     width: 580px;
-    height: 800px;
-
+    height: 605px;
     transition: 0.3s ease-in-out;
 }
 .control-center img {
@@ -112,11 +118,6 @@ body {
 .toggle-control-center {
     top: 40px;
 }
-
-.hidden {
-    display: none;
-}
-
 
 
 .icon-container {
