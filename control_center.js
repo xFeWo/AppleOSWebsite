@@ -44,3 +44,39 @@ function toggleLockButton() {
         img.classList.toggle("control-center-lock-icon-off");
     }
 }
+
+function toggleFlightModeButton() {
+    var img = document.getElementById("flight-mode-button");
+    if (img.src.includes("flight_mode_on.png")) {
+        img.src = "images/control_center/connectivity/flight_mode_off.png";
+    } else {
+        img.src = "images/control_center/connectivity/flight_mode_on.png";
+    }
+}
+
+function toggleHotSpotButton() {
+    var img = document.getElementById("hot-spot-button");
+    if (img.src.includes("hot_spot_on.png")) {
+        img.src = "images/control_center/connectivity/hot_spot_off.png";
+    } else {
+        img.src = "images/control_center/connectivity/hot_spot_on.png";
+    }
+}
+
+function toggleAirdropButton() {
+    var img = document.getElementById("airdrop-button");
+    if (img.src.includes("airdrop_on.png")) {
+        img.src = "images/control_center/connectivity/airdrop_off.png";
+    } else {
+        img.src = "images/control_center/connectivity/airdrop_on.png";
+    }
+}
+
+function toggleBluetoothButton() {
+    var img = document.getElementById("bluetooth-button");
+    if (img.src.includes("bluetooth_on.png")) {
+        img.src = "images/control_center/connectivity/bluetooth_off.png";
+    } else {
+        img.src = "images/control_center/connectivity/bluetooth_on.png";
+    }
+}
