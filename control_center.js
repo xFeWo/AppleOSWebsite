@@ -58,20 +58,26 @@ function toggleFocusButton() {
 }
 
 function toggleFlightModeButton() {
-    var img = document.getElementById("flight-mode-button");
-    if (img.src.includes("flight_mode_on.png")) {
-        img.src = "images/control_center/connectivity/flight_mode_off.png";
+    var img_flight_mode = document.getElementById("flight-mode-button");
+    var img_hot_spot = document.getElementById("hot-spot-button");
+    if (img_flight_mode.src.includes("flight_mode_on.png")) {
+        img_flight_mode.src = "images/control_center/connectivity/flight_mode_off.png";
+        img_hot_spot.src = "images/control_center/connectivity/hot_spot_on.png";
     } else {
-        img.src = "images/control_center/connectivity/flight_mode_on.png";
+        img_flight_mode.src = "images/control_center/connectivity/flight_mode_on.png";
+        img_hot_spot.src = "images/control_center/connectivity/hot_spot_off.png";
     }
 }
 
 function toggleHotSpotButton() {
-    var img = document.getElementById("hot-spot-button");
-    if (img.src.includes("hot_spot_on.png")) {
-        img.src = "images/control_center/connectivity/hot_spot_off.png";
+    var img_hot_spot = document.getElementById("hot-spot-button");
+    var img_flight_mode = document.getElementById("flight-mode-button");
+    if (img_hot_spot.src.includes("hot_spot_on.png")) {
+        img_hot_spot.src = "images/control_center/connectivity/hot_spot_off.png";
+        img_flight_mode.src = "images/control_center/connectivity/flight_mode_on.png";
     } else {
-        img.src = "images/control_center/connectivity/hot_spot_on.png";
+        img_hot_spot.src = "images/control_center/connectivity/hot_spot_on.png";
+        img_flight_mode.src = "images/control_center/connectivity/flight_mode_off.png";
     }
 }
 
