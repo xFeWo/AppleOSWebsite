@@ -59,34 +59,34 @@ function toggleFocusButton() {
 
 function toggleFlightModeButton() {
     var img_flight_mode = document.getElementById("flight-mode-button");
-    var img_hot_spot = document.getElementById("hot-spot-button");
+    var img_celluar = document.getElementById("celluar-button");
     if (img_flight_mode.src.includes("flight_mode_on.png")) {
         img_flight_mode.src = "images/control_center/connectivity/flight_mode_off.png";
-        img_hot_spot.src = "images/control_center/connectivity/hot_spot_on.png";
+        img_celluar.src = "images/control_center/connectivity/celluar_on.png";
     } else {
         img_flight_mode.src = "images/control_center/connectivity/flight_mode_on.png";
-        img_hot_spot.src = "images/control_center/connectivity/hot_spot_off.png";
+        img_celluar.src = "images/control_center/connectivity/celluar_off.png";
     }
 }
 
-function toggleHotSpotButton() {
-    var img_hot_spot = document.getElementById("hot-spot-button");
+function toggleCelluarButton() {
+    var img_celluar = document.getElementById("celluar-button");
     var img_flight_mode = document.getElementById("flight-mode-button");
-    if (img_hot_spot.src.includes("hot_spot_on.png")) {
-        img_hot_spot.src = "images/control_center/connectivity/hot_spot_off.png";
+    if (img_celluar.src.includes("celluar_on.png")) {
+        img_celluar.src = "images/control_center/connectivity/celluar_off.png";
         img_flight_mode.src = "images/control_center/connectivity/flight_mode_on.png";
     } else {
-        img_hot_spot.src = "images/control_center/connectivity/hot_spot_on.png";
+        img_celluar.src = "images/control_center/connectivity/celluar_on.png";
         img_flight_mode.src = "images/control_center/connectivity/flight_mode_off.png";
     }
 }
 
-function toggleAirdropButton() {
-    var img = document.getElementById("airdrop-button");
-    if (img.src.includes("airdrop_on.png")) {
-        img.src = "images/control_center/connectivity/airdrop_off.png";
+function toggleWifiButton() {
+    var img = document.getElementById("wifi-button");
+    if (img.src.includes("wifi_on.png")) {
+        img.src = "images/control_center/connectivity/wifi_off.png";
     } else {
-        img.src = "images/control_center/connectivity/airdrop_on.png";
+        img.src = "images/control_center/connectivity/wifi_on.png";
     }
 }
 
