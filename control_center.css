@@ -1,3 +1,23 @@
+.control-center {
+    position: absolute;
+    top: -605px;
+    right: 40px;
+    z-index: 10;
+    width: 580px;
+    height: 605px;
+    transition: 0.3s ease-in-out;
+}
+
+.toggle-control-center {
+    top: 40px;
+}
+
+.control-center img {
+    cursor: pointer;
+}
+
+
+
 .control-center-top-section {
     display: flex;
     align-items: center;

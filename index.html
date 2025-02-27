@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startseite</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="search_bar.css">
     <link rel="stylesheet" href="control_center.css">
     <link rel="icon" type="image/png" href="images/apple_icon.png">
     <script src="https://kit.fontawesome.com/bdb26e1460.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <script src="search_bar.js"></script>
     <script src="control_center.js"></script>
 </head>
 <body>
-    <div id="overlay" class="overlay" onclick="closeControlCenter()"></div>
+    <div id="control-center-overlay" class="control-center-overlay" onclick="closeControlCenter()"></div>
+    <div id="search-bar-overlay" class="search-bar-overlay" onclick="closeSearchBar()"></div>
 
     <div class="control-center" id="control-center">
         <div class="control-center-top-section">
@@ -49,6 +52,38 @@
                 <div class="control-center-volume-bar">
                     <img src="images/control_center/bars/volume_bar.png" width="40" height="40">
                 </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="search-bar" id="search-bar">
+        <div class="search-bar-icon"><i class="fa-solid fa-search"></i></div>
+        <input type="text" id="search-bar-input" class="search-bar-input" placeholder="Suchen">
+        <hr class="search-bar-line">
+        <div class="search-bar-application-container">
+            <div class="icon">
+                <a href="applications/settings/settings.html" target="_blank"><img src="images/icons/settings.png" width="100" height="100"></a>
+                <p>Einstellungen</p>
+            </div>
+            <div class="icon">
+                <a href="applications/phone/phone.html" target="_blank"><img src="images/icons/phone.png" width="100" height="100"></a>
+                <p>Telefon</p>
+            </div>
+            <div class="icon">
+                <a href="applications/messages/messages.html" target="_blank"><img src="images/icons/messages.png" width="100" height="100"></a>
+                <p>Nachrichten</p>
+            </div>
+            <div class="icon">
+                <a href="applications/mail/mail.html" target="_blank"><img src="images/icons/mail.png" width="100" height="100"></a>
+                <p>Mail</p>
+            </div>
+            <div class="icon">
+                <a href="applications/clock/clock.html" target="_blank"><img src="images/icons/clock.png" width="100" height="100"></a>
+                <p>Uhr</p>
+            </div>
+            <div class="icon">
+                <a href="applications/notes/notes.html" target="_blank"><img src="images/icons/notes.png" width="100" height="100"></a>
+                <p>Notizen</p>
             </div>
         </div>
     </div> 
@@ -116,10 +151,6 @@
             <a href="applications/health/health.html" target="_blank"><img src="images/icons/health.png" width="100" height="100"></a>
             <p>Health</p>
         </div>
-        <div class="icon itunes-icon-container">
-            <a href="applications/itunes/itunes.html" target="_blank"><img src="images/icons/itunes.png" width="100" height="100"></a>
-            <p>iTunes</p>
-        </div>
         <div class="icon reminders-icon-container">
             <a href="applications/reminders/reminders.html" target="_blank"><img src="images/icons/reminders.png" width="100" height="100"></a>
             <p>Erinnerung</p>
@@ -147,22 +178,22 @@
     </div>
 
     <div class="navbar-container">
-        <div class="navbar-icon navbar-settings-icon-container">
+        <div class="navbar-icon navbar-settings-icon">
             <a href="applications/settings/settings.html" target="_blank"><img src="images/icons/settings.png" width="100" height="100"></a>
         </div>
-        <div class="navbar-icon navbar-phone-icon-container">
+        <div class="navbar-icon navbar-phone-icon">
             <a href="applications/phone/phone.html" target="_blank"><img src="images/icons/phone.png" width="100" height="100"></a>
         </div>
-        <div class="navbar-icon navbar-messages-icon-container">
+        <div class="navbar-icon navbar-messages-icon">
             <a href="applications/messages/messages.html" target="_blank"><img src="images/icons/messages.png" width="100" height="100"></a>
         </div>
-        <div class="navbar-icon navbar-mail-icon-container">
+        <div class="navbar-icon navbar-mail-icon">
             <a href="applications/mail/mail.html" target="_blank"><img src="images/icons/mail.png" width="100" height="100"></a>
         </div>
-        <div class="navbar-icon navbar-clock-icon-container">
+        <div class="navbar-icon navbar-clock-icon">
             <a href="applications/clock/clock.html" target="_blank"><img src="images/icons/clock.png" width="100" height="100"></a>
         </div>
-        <div class="navbar-icon navbar-notes-icon-container">
+        <div class="navbar-icon navbar-notes-icon">
             <a href="applications/notes/notes.html" target="_blank"><img src="images/icons/notes.png" width="100" height="100"></a>
         </div>
     </div>

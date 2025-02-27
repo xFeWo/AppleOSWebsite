@@ -10,7 +10,6 @@ body {
 
 
 
-
 .datetime {
     position: absolute;
     left: 8px;
@@ -25,7 +24,7 @@ body {
 
 .notch {
     width: 250px;
-    height: 50px;
+    height: 40px;
     background-color: black;
     color: black;
     position: absolute;
@@ -62,8 +61,6 @@ body {
     font-size: 19px;
 }
 
-
-
 .open-search-bar {
     position: absolute;
     top: 30px;
@@ -73,8 +70,6 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
-
 
 .open-control-center {
     position: absolute;
@@ -86,38 +81,30 @@ body {
     cursor: pointer;
 }
 
-.overlay {
+
+
+.control-center-overlay, .search-bar-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(8px);
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
-.overlay.show {
+.control-center-overlay {
+    backdrop-filter: blur(8px);
+}
+.control-center-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+.search-bar-overlay.show {
     visibility: visible;
     opacity: 1;
 }
 
-.control-center {
-    position: absolute;
-    top: -6005px;
-    right: 40px;
-    z-index: 10;
-    width: 580px;
-    height: 605px;
-    transition: 0.3s ease-in-out;
-}
-.control-center img {
-    cursor: pointer;
-}
-
-.toggle-control-center {
-    top: 40px;
-}
 
 
 .icon-container {
@@ -150,7 +137,6 @@ body {
     letter-spacing: 0.8px;
     font-size: 15px;
     margin-top: 3px;
-    cursor: default;
 }
 
 
@@ -159,18 +145,16 @@ body {
     position: absolute;
     bottom: 25px;
     left: 50%;
-    z-index: -10;
     transform: translateX(-50%);
-
-    background: rgba(233, 233, 233, 0.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
+    z-index: -10;
     padding: 15px 10px 15px 10px;
     border-radius: 40px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    background: rgba(233, 233, 233, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .navbar-icon {
