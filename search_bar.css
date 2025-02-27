@@ -45,9 +45,10 @@
 }
 
 .search-bar-line {
-    width: 99.9%;
-    height: 0.1px;
+    height: 1px;
     margin-top: 5px;
+    border: 0;
+    border-top: 1px solid rgb(130, 130, 130);
 }
 
 .search-bar-app-container {
