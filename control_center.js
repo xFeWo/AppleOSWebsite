@@ -1,22 +1,28 @@
 var audio = new Audio('music/you_spin_me_round.mp3');
+audio.loop = true;
 
-function togglePlayPause() {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
+function toggleBackwardButton() {
+    audio.currentTime = 0;
+    if (!audio.paused) {
+        var img = document.getElementById("play-pause-button");
+        var text = document.getElementById("music");
+        img.src = "images/control_center/mediaplayer/play.png";
+        text.innerHTML = "Musik"
+        audio.pause()
     }
 }
 
 function togglePlayPauseButton() {
     var img = document.getElementById("play-pause-button");
     var text = document.getElementById("music");
-    if (img.src.includes("play.png")) {
+    if (audio.paused) {
         img.src = "images/control_center/mediaplayer/pause.png";
         text.innerHTML = "You Spin Me Round"
+        audio.play()
     } else {
         img.src = "images/control_center/mediaplayer/play.png";
         text.innerHTML = "Musik"
+        audio.pause()
     }
 }
 
