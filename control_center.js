@@ -10,12 +10,13 @@ function togglePlayPause() {
 
 function togglePlayPauseButton() {
     var img = document.getElementById("play-pause-button");
+    var text = document.getElementById("music");
     if (img.src.includes("play.png")) {
         img.src = "images/control_center/mediaplayer/pause.png";
-        audio.play();
+        text.innerHTML = "You Spin Me Round"
     } else {
         img.src = "images/control_center/mediaplayer/play.png";
-        audio.pause();
+        text.innerHTML = "Musik"
     }
 }
 

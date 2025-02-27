@@ -23,13 +23,34 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Wetter", img: "images/icons/weather.png", link: "applications/weather/weather.html" }
     ];
     
+    function fuzzyMatch(text, search) {
+        if (!search) return true;
+
+        let searchIndex = 0;
+        for (let char of text.toLowerCase()) {
+            if (char === search[searchIndex]) {
+                searchIndex++;
+            }
+            if (searchIndex === search.length) return true;
+        }
+        return false;
+    }
 
     function renderIcons(filterText = "") {
         container.innerHTML = "";
 
         let filteredIcons = icons
-            .filter(icon => icon.name.toLowerCase().includes(filterText.toLowerCase()))
-            .slice(0, 6);
+        .map(icon => ({
+            ...icon,
+            match: fuzzyMatch(icon.name, filterText.toLowerCase()) ? 1 : 0
+        }))
+        .filter(icon => icon.match)
+        .sort((a, b) => {
+            const startsWithA = a.name.toLowerCase().startsWith(filterText.toLowerCase());
+            const startsWithB = b.name.toLowerCase().startsWith(filterText.toLowerCase());
+            return startsWithB - startsWithA;
+        })
+        .slice(0, 6);
 
         filteredIcons.forEach(icon => {
             const div = document.createElement("div");
